@@ -376,7 +376,6 @@ public class CharonVpnService extends VpnService implements Runnable, VpnStateSe
         }
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this, NOTIFICATION_CHANNEL)
 //                .setSmallIcon(R.drawable.ic_notification)
-                .setSmallIcon(androidx.appcompat.R.drawable.abc_ic_star_black_48dp)
                 .setCategory(NotificationCompat.CATEGORY_SERVICE)
                 .setVisibility(publicVersion ? NotificationCompat.VISIBILITY_PUBLIC
                         : NotificationCompat.VISIBILITY_PRIVATE);
@@ -384,7 +383,6 @@ public class CharonVpnService extends VpnService implements Runnable, VpnStateSe
         if (error != ErrorState.NO_ERROR) {
             s = mService.getErrorText();
 //            builder.setSmallIcon(R.drawable.ic_notification_warning);
-            builder.setSmallIcon(androidx.appcompat.R.drawable.abc_ic_star_black_48dp);
 //            builder.setColor(ContextCompat.getColor(this, R.color.error_text));
             builder.setColor(0xFFD9192C);
 
@@ -411,7 +409,6 @@ public class CharonVpnService extends VpnService implements Runnable, VpnStateSe
                 case CONNECTING:
                     s = "Connecting...";
 //                    builder.setSmallIcon(R.drawable.ic_notification_connecting);
-                    builder.setSmallIcon(androidx.appcompat.R.drawable.abc_ic_star_black_48dp);
                     builder.setColor(0xFFFF9909);
                     add_action = true;
                     break;
