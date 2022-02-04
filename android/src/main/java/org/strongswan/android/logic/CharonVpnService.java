@@ -411,7 +411,7 @@ public class CharonVpnService extends VpnService implements Runnable, VpnStateSe
                 case CONNECTING:
                     s = "Connecting...";
 //                    builder.setSmallIcon(R.drawable.ic_notification_connecting);
-                    builder.setSmallIcon(R.drawable.ic_launcher)
+                    builder.setSmallIcon(R.drawable.ic_launcher);
                     builder.setColor(0xFFFF9909);
                     add_action = true;
                     break;
